@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>stellar</name>
+    <url>http://maven.apache.org</url>
+
+
+<repositories>
+    <repository>
+        <id>lwjgl</id>
+        <url>https://repo.lwjgl.org/repository/maven-public/</url>
+    </repository>
+</repositories>
+
+<dependencies>
+
+
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl</artifactId>
+    <version>3.3.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-glfw</artifactId>
+    <version>3.3.0</version>
+</dependency>
+
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-opengl</artifactId>
+    <version>3.3.0</version>
+</dependency>
+
+<!-- Native Windows Libraries -->
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-glfw</artifactId>
+    <version>3.3.0</version>
+    <classifier>natives-windows</classifier>
+</dependency>
+
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl</artifactId>
+    <version>3.3.0</version>
+    <classifier>natives-windows</classifier>
+</dependency>
+
+<dependency>
+    <groupId>org.lwjgl</groupId>
+    <artifactId>lwjgl-stb</artifactId>
+    <version>3.3.0</version>
+</dependency>
+
+
+
+    <!--    <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.8.2</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+ 
+
+    <dependency>
+        <groupId>net.java.jinput</groupId>
+        <artifactId>jinput</artifactId>
+        <version>2.0.10</version>
+    </dependency>
+    <dependency>
+        <groupId>net.java.jinput</groupId>
+        <artifactId>jinput</artifactId>
+        <version>2.0.10</version>
+        <classifier>natives-all</classifier>
+    </dependency> -->
+
+    
+
+
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.15.2</version> <!-- Use the latest version -->
+</dependency>
+
+<dependency>
+    <groupId>javazoom</groupId>
+    <artifactId>jlayer</artifactId>
+    <version>1.0.1</version>
+</dependency>
+
+
+  <dependency>
+    <groupId>com.code-disaster.steamworks4j</groupId>
+    <artifactId>steamworks4j</artifactId>
+    <version>1.9.0</version>
+  </dependency>
+
+
+    </dependencies>
+    
+
+
+<properties>
+    <app.name>stellar</app.name>
+    <app.version>1.0.0</app.version>
+    <vendor.name>Morgames23</vendor.name>
+    <copyright>Copyright@2025</copyright>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+    <lombok.version>1.18.36</lombok.version>
+</properties>
+
+</project>
+
