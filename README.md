@@ -1,5 +1,6 @@
 # Java_Chess
-A Chess Engine Entirely written in Java.
+A Chess Engine Entirely written in Java. 
+Uses Maven so make sure to build before ran.
 
 In single player it is 50% chance that you will be white or black.
 NOTE: new game button does nothing, and there are a few bugs
