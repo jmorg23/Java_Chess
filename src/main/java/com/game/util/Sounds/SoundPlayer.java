@@ -28,25 +28,8 @@ public class SoundPlayer {
 
     public enum SoundEffects {
         SE_CLICK("/sounds/click.wav"),
-        SE_SELECT("/sounds/select.wav"),
+        SE_SELECT("/sounds/select.wav");
 
-        SE_COIN("/sounds/coin.wav"),
-
-        SE_CHEST("/sounds/chest.wav"),
-        SE_DOOR("/sounds/door.wav"),
-
-        SE_FUSE("/sounds/fuse.wav"),
-        SE_EXPLOSION("/sounds/explosion.wav"),
-
-        SE_CYDIE("/sounds/enemyhit.wav"),
-
-        SE_TALK("/sounds/talk.wav"),
-
-        SE_WALK("/sounds/walk.wav"),
-        SE_JUMP("/sounds/jump.wav"),
-        SE_HURT("/sounds/hurt.wav"),
-
-        SE_LAND("/sounds/land.wav");
 
         public static void preloadSounds() {
             for (SoundEffects sound : SoundEffects.values()) {

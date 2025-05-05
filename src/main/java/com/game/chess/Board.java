@@ -39,7 +39,7 @@ public class Board extends JPanel implements ActionListener {
     public static ArrayList<Piece> white = new ArrayList<>();
     public static boolean aiGame = false;
     private BufferedImage mainBg;
-    private CustomButton newGame, pieceLeft, pieceRight, boardLeft, boardRight;
+    private CustomButton pieceLeft, pieceRight, boardLeft, boardRight;
 
     private AI theAI;
     private boolean playAI = false;
@@ -260,11 +260,11 @@ public class Board extends JPanel implements ActionListener {
         try {
             CustomButton.freshStart();
             mainBg = ImageIO.read(getClass().getResourceAsStream("/mainBg.png"));
-            newGame = new CustomButton(() -> {
+            // newGame = new CustomButton(() -> {
 
-            }, new ActivateAction());
+            // }, new ActivateAction());
         
-            newGame.setBounds(1036, 875, 200, 200);
+            // newGame.setBounds(1036, 875, 200, 200);
 
             pieceLeft = new CustomButton(() -> {
                 Piece.setTheme(-2);
@@ -326,9 +326,9 @@ public class Board extends JPanel implements ActionListener {
             new AI(!iw, board, diff, white);
         }
 
-        addMouseListener(newGame.getMyAction());
-        addMouseMotionListener(newGame.getMyAction());
-        CustomButton.addButton(newGame);
+        // addMouseListener(newGame.getMyAction());
+        // addMouseMotionListener(newGame.getMyAction());
+        // CustomButton.addButton(newGame);
         addMouseListener(pieceLeft.getMyAction());
         addMouseMotionListener(pieceLeft.getMyAction());
         CustomButton.addButton(pieceLeft);
@@ -344,7 +344,7 @@ public class Board extends JPanel implements ActionListener {
         addMouseMotionListener(boardRight.getMyAction());
         CustomButton.addButton(boardRight);
 
-        CustomButton.addCircle(new ButtonCircle(new int[] { 0, 1, 2, 3, 4 }));
+        CustomButton.addCircle(new ButtonCircle(new int[] { 0, 1, 2, 3}));
 
         addMouseListener(player1);
 
@@ -519,10 +519,10 @@ public class Board extends JPanel implements ActionListener {
         }
         if (Player.whitesTurn) {
             g2.setColor(Color.YELLOW);
-            g2.drawRect(1070, 163, 110, 57);
+            g2.drawRect(1069, 162, 110, 58);
         } else {
             g2.setColor(Color.YELLOW);
-            g2.drawRect(1180, 163, 110, 57);
+            g2.drawRect(1180, 162, 110, 58);
 
         }
 

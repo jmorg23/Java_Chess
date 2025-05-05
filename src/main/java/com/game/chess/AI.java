@@ -157,7 +157,7 @@ public class AI {
 
                             move.setMoveRank(move.getMoveRank() + move.getPointsWorth());
                             if (move.isCanBeTaken()) {
-                                move.setMoveRank(move.isCanBeTakenButRecoverForMorePoints() ? move.getMoveRank() + 4
+                                move.setMoveRank(move.isCanBeTakenButRecoverForMorePoints() ? move.getMoveRank() + 2
                                         : move.getMoveRank() - piece.pointsWorth);
                                 // System.out.println("This move will cause me to be able to be taken");
 
@@ -254,7 +254,7 @@ public class AI {
                 // }
 
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
